@@ -1,0 +1,7 @@
+<mat-chip-list  *ngIf="users$ | async; let users">
+  <mat-chip *ngFor="let user of users; let i = index" [ngStyle]="{'background-color':  user.entry.enabled ? 'green' : null}"
+  [removable]="user.entry.enabled" (removed)="removeUser(user)">
+    {{ user.entry.firstName }}
+    <mat-icon matChipRemove *ngIf="user.entry.enabled">cancel</mat-icon>
+  </mat-chip>
+</mat-chip-list>

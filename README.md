@@ -1,4 +1,4 @@
-# AlfrescoTask
+# NGRX
 
 Simple application using NGRX
 
